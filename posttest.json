@@ -1,39 +1,50 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "To detect a stuck at fault, error signal must be propagated (must affect the value).This is called",
+    "answers": {
+      "a": "Fault termination",
+      "b": "Fault propagation",
+      "c": "Fault nullification",
+      "d": "Fault improvisation"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "b"
+  },
+  {
+    "question": "ATPG is a tool that can ascertain presence and abscence of faults at some locations in the circuits.ATPG stand for",
+    "answers": {
+      "a": "Automatic Test Pattern Group",
+      "b": "Automatic Technology Pattern Generation",
+      "c": "Automatic Test Pattern Generation",
+      "d": "Automatic Technology Pattern Group"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In order to detect a fault at 'h', we need to provide fault-free logic value at 'h' location.This is called",
+    "answers": {
+      "a": "Fault activation",
+      "b": "Fault termination",
+      "c": "Fault removal",
+      "d": "Fault improvisation"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "It is always possible to detect a Stuck-at-0 fault using some input values.",
+    "answers": {
+      "a": "True",
+      "b": "False"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "SA0 present at a location means the signal passing through that line",
+    "answers": {
+      "a": "is ambiguous",
+      "b": "is always 0",
+      "c": "is always 1",
+      "d": "None of the above"
+    },
+    "correctAnswer": "b"
+  }
+]
