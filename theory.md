@@ -1,6 +1,4 @@
-### Theory
-
-#### Stuck-at-Fault
+### Stuck-at-Fault
 
 A Stuck-at fault (SAF) is a logic-level fault that mimics a manufacturing defect on a digital device, circuits, etc. A Stuck-at-Fault is of two types: stuck-at-0 (SA0) and stuck-at-1 (SA1) fault. Stuck at faults occur when a line is permanently stuck to Vcc or ground giving a faulty output. This line may be an input or output to any gate. Also this fault can be single or multiple stuck at faults, Although in this experiment we will only talk about single stuck at faults.
 
@@ -13,7 +11,7 @@ A fault model is an engineering model of something that could go wrong in the co
 
 Basic fault models in digital circuits include the stuck-at fault model, the bridging fault model, the transistor faults, the open fault model, the delay fault model, etc. In the past several decades, the most popular fault model used in practice is the single stuck-at fault model. To use this fault model, each input pin on each gate in turn, is assumed to be grounded, and a test vector is developed to indicate the circuit is faulty. The test vector is a collection of bits to apply to the circuit's inputs, and a collection of bits expected at the circuit's output. If the gate pin under consideration is grounded, and this test vector is applied to the circuit, at least one of the output bits will not agree with the corresponding output bit in the test vector. The stuck-at fault model is a logical fault model because no delay information is associated with the fault definition. The single stuck-at fault model is structural because it is defined based on a structural gate-level circuit model.
 
-#### Decoder (binary decoder)
+### Decoder (binary decoder)
 
 In digital electronics, a binary decoder is a combinational logic circuit that converts binary information from the n coded inputs to a maximum of 2n unique outputs. The name “Decoder” means to translate or decode coded information from one format into another, so a binary decoder transforms “n” binary input signals into an equivalent code using 2n outputs. If a binary decoder receives n inputs (usually grouped as a single Binary or Boolean number) it activates one and only one of its 2n outputs based on that input with all other outputs deactivated. Decoders are also available with an additional “Enable” input pin which allows the decoded output to be turned “ON” or “OFF” by applying a logic “1” or logic “0” respectively to it. So for example, when the enable input is at logic level “0”, (EN = 0) all outputs are “OFF” at logic “0” (for AND gates) regardless of the state of the inputs A and B.
 
@@ -24,7 +22,7 @@ Binary Decoders are most often used in more complex digital systems to access a 
 An example of a binary decoder is shown below:<br>
 <center><img src="images/bin_dec.gif" /></center><br>
 
-#### 3 to 8 decoder
+### 3 to 8 decoder
 
 The number of available inputs are 3 and outputs are 8. Let us represent the inputs and outputs by symbol letters. Let us represent the inputs by S0, S1, and S2; and the outputs by D0, D1, D2, … D7. This decoder circuit gives 8 logic outputs for 3 inputs and has a enable pin. The circuit is designed with AND and NAND logic gates. It takes 3 binary inputs and activates one of the eight outputs. 3 to 8 line decoder circuit is also called a binary to an octal decoder. The block diagram of a simple 3x8 decoder is given below:<br>
 <center><img src="images/dec3_8.jpg" /></center><br>
@@ -37,7 +35,7 @@ Using the truth table, we can write outputs D0 to D7 in terms of inputs x, y and
 
 Higher order decoders can be constructed from lower order ones. This is explained with an example below.
 
-#### 4-to-16 decoder using 3-to-8 decoder
+### 4-to-16 decoder using 3-to-8 decoder
 
 The parallel inputs x, y & z are applied to each 3 to 8 decoder. The complement of input, w is connected to Enable, E of upper 3 to 8 decoder in order to get the outputs, D0 to D7. These are the first eight minterms. The input, w is directly connected to Enable, E of lower 3 to 8 decoder in order to get the outputs, D8 to D15. These are the last eight minterms.
 
@@ -45,11 +43,11 @@ The parallel inputs x, y & z are applied to each 3 to 8 decoder. The complement 
 when the w is at logic '0' the above decoder is turned on and gives output (D0 to D7), and when w is at logic '1' the below decoder is turned on and gives output (D8 to D15).The truth table of the 4 to 16 decoder is as follows :<br>
 <center><img src="images/image_4.png" /></center><br>
 
-#### SA0 fault on x input wire
+### SA0 fault on x input wire
 
 Please note: SA0 faults on y and z wires will lead to similar cases, with some inputs always being low and other inputs as provided.
 
-##### Case (i)
+#### Case (i)
 
 Consider the case of SA0 fault at the position shown below.<br>
 <center><img src="images/x_1.png" /></center><br>
@@ -59,7 +57,7 @@ When this happens, the value of x is always changed to zero regardless of which 
 The expected as well as faulty values are listed in the table below:<br>
 <center><img src="images/x_fault1.png" /></center><br>
 
-##### Case (ii)
+#### Case (ii)
 
 Now consider the case of SA0 at a slightly different position:<br>
 <center><img src="images/x_2.png" /></center><br>
@@ -69,7 +67,7 @@ Now, the effects of the fault are visible only when the first decoder is active.
 The truth tables for this case are given below:<br>
 <center><img src="images/x_fault2.png" /></center><br>
 
-##### Case (iii)
+#### Case (iii)
 
 Finally consider SA0 fault at the following location:<br>
 <center><img src="images/x_3.png" /></center><br>
@@ -81,9 +79,9 @@ When the second decoder is active, the value of x will be changed to 0 because o
 Truth table is given below:<br>
 <center><img src="images/x_fault3.png" /></center><br>
 
-#### SA0 fault on w input wire
+### SA0 fault on w input wire
 
-##### Case (i)
+#### Case (i)
 
 When SA0 fault is at the position shown in the below figure:<br>
 <center><img src="images/w_fault1.png" /></center><br>
@@ -95,7 +93,7 @@ The truth table of faulty circuit with expected and obtained outputs is shown be
 
 Here w is the actual input value and wf (faulty value) represents the value of w changed due to fault present in the circuit.
 
-##### Case (ii)
+#### Case (ii)
 
 When SA0 fault is at the position as shown below:<br>
 <center><img src="images/w_fault2.png" /></center><br>
@@ -107,7 +105,7 @@ The truth table of this faulty circuit with expected and obtained outputs is sho
 
 Here w is the actual input value and wf (faulty value) represents the changed value of w connected only to decoder 2
 
-##### Case (iii)
+#### Case (iii)
 
 When SA0 fault is on the w line at the position shown:<br>
 <center><img src="images/w_fault3.jpg" /></center><br>
@@ -117,7 +115,7 @@ In this case, SA0 fault is present at the position wf and hence '0' is passed to
 For example, say input wxyz is 0010, then output obtainded is same as expected output i.e. D2. But if the input is 1010, the expected output is D10, but faulty output is both D2 and D10 are high, as both decoders are activated. The truth table for expected and faulty output values is given below:<br>
 <center><img src="images/w_fault3table.jpg" /></center><br>
 
-##### Case (iv)
+#### Case (iv)
 
 When SA0 fault is on the w input line at the position shown in the image below:<br>
 <center><img src="images/w_fault4.jpg" /></center><br>
@@ -127,11 +125,11 @@ In this case, the SA0 fault is experienced only by decoder 1. For decoder 2, the
 For example, if input wxyz is 1011, then output is the same as expected output, i.e. D11. But when input is 0011, we expect output D3 but no output is obtained. The truth table for expected and faulty output values is given below:<br>
 <center><img src="images/w_fault4table.jpg" /></center><br>
 
-#### SA0 fault on output line
+### SA0 fault on output line
 
 Please note: SA0 faults on other output lines will lead to similar cases, with some outputs always being low (stuck-at-0) and others as expected
 
-##### SA0 fault on D0 output line
+#### SA0 fault on D0 output line
 
 Consider the fault on line D0 as shown below:<br>
 <center><img src="images/fault_output.jpeg" /></center><br>

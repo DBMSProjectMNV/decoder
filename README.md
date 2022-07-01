@@ -1,3 +1,7 @@
-## README
-
-this readme file describes documentation of the entire experiment
+This folder has 
+### Aim
+### Theory
+### Procedure
+### Pre Test
+### Post Test
+### References
