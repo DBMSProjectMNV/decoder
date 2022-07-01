@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="no"?>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="220" height="270" stroke="#000" stroke-width="2" fill="none" >
+	<!--a rx ry x-axis-rotation-degrees large-arc-flag sweep-flag x y-->
+	<path d="m 10 10 m 0 100 s 0 50 50 100 l 0 50 l 100 0 l 0 -50 s 50 -50 50 -100 a 100 100 0 0 0 -200 0 z" fill="#ff0" />
+	<!--<path d="m 10 10 m 100 250 s 0 -75 50 -150 q -10 -25 -20 0 q -10 25 -20 0 q -10 -25 -20 0 q -10 25 -20 0 q -10 -25 -20 0 s 50 75 50 150" />-->
+	<path d="m 10 10 m 100 250 s 0 -75 50 -150 q -10 -25 -20 0 t -20 0 t -20 0 t -20 0 t -20 0 s 50 75 50 150" />
+	<path d="m 10 10 m 50 240 l 100 -10 m 0 -10 l -100 10 m 0 -10 l 100 -10" style="stroke-width:4px;" />
+</svg>

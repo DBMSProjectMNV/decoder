@@ -1,39 +1,50 @@
-{
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+[
+  {
+    "question": "Stuck at fault are of how many types",
+    "answers": {
+      "a": "2",
+      "b": "3",
+      "c": "1",
+      "d": "4"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+    "correctAnswer": "a"
+  },
+  {
+    "question": "SA0 fault detection model is used to ",
+    "answers": {
+      "a": "Predict the scenario in case a fault is found in circuit",
+      "b": "Identify errors that can occur due to SA0 at different locations.",
+      "c": "Predict reasons of fault.",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "IC chip used for implementation of 3x8 line-decoder",
+    "answers": {
+      "a": "IC 74HC200",
+      "b": "IC 74HC238",
+      "c": "IC 74HR238",
+      "d": "IC 74HA228"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The 4x16 line-decoder implemented using two 3x8 line-decoders has enable as",
+    "answers": {
+      "a": "one of the inputs",
+      "b": "one of the outputs",
+      "c": "xor of two inputs",
+      "d": "xnor of two inputs"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "By considering Stuck-at-0 fault (line always passes signal 0) at different locations, all the SA0 fault cases can be identified",
+    "answers": {
+      "a": "True",
+      "b": "False"
+    },
+    "correctAnswer": "a"
+  }
+]

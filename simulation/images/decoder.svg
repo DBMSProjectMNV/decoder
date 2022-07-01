@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="420" height="380" stroke="#000" stroke-width="1" fill="none" >
+	<line x1="10" y1="30" x2="290" y2="30" /> <!--x line to decoder 1-->
+	<line x1="10" y1="70" x2="290" y2="70" /> <!--y line to decoder 1-->
+	<line x1="10" y1="110" x2="290" y2="110" /> <!--z line to decoder 1-->
+	<path d="m 10 170 l 80 0 m 50 0 l 210 0 l 0 -40" /> <!--w line to decoder 1-->
+	<path d="m 290 10 l 120 0 l 0 120 l -120 0 l 0 -120 z" style="fill:#0ff;fill-opacity:0.4;" /> <!--decoder 1-->
+	<path d="m 290 210 l 120 0 l 0 120 l -120 0 l 0 -120 z" style="fill:#0ff;fill-opacity:0.4;" /><!--decoder 2-->
+	<path d="m 250 30 l 0 200 l 40 0" /> <!--x line to decoder 2-->
+	<path d="m 210 70 l 0 200 l 80 0" /> <!--y line to decoder 2-->
+	<path d="m 170 110 l 0 200 l 120 0" /> <!--z line to decoder 2-->
+	<path d="m 50 170 l 0 200 l 300 0 l 0 -40" /> <!--w line to decoder 2-->
+	<polygon points="90,150 90,190 130,170" /> <!--not gate triangle-->
+	<circle cx="135" cy="170" r="5" /> <!--not gate circle-->
+	<text x="335" y="70">3 x 8</text> <!-- text inside decoder 1-->
+	<text x="345" y="120">E</text> <!-- Enable switch for decoder 1-->
+	<text x="335" y="270">3 x 8</text> <!-- text inside decoder 2-->
+	<text x="345" y="320">E</text> <!-- Enable switch for decoder 2-->
+	<!--Joints-->
+	<circle cx="250" cy="30" r="3" fill="#000" />
+	<circle cx="210" cy="70" r="3" fill="#000" />
+	<circle cx="170" cy="110" r="3" fill="#000" />
+	<circle cx="50" cy="170" r="3" fill="#000" />
+</svg>

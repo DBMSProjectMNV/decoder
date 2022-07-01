@@ -1,13 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Simulation</title>
+	<!-- <link rel="stylesheet" href="css/style.css" /> -->
+	<link rel="stylesheet" href="css/sim.css" />
+	<script src="js/sim.js" defer></script>
 </head>
 <body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+	<div class="toplevel">
+		<div class="heading"><h2>Simulation</h2>
+			<button class="instn" onclick="this.parentElement.querySelector('ul').classList.toggle('hidden');">instructions</button>
+			<div><ul class="hidden">
+				<li>The circuit simulated is as shown in the below image.</li>
+				<li>Click the input switches<img src="images/switch_input.png" alt="switch image" /> to select the required inputs named "x", "y", "z" and "w".</li>
+				<li> The simulation will display corresponding output. Output is displayed as a glowing bulb</li>
+				<li>Press the "RUN" button to display the output in the truth table.</li>
+				<li>"reset" button clears all entries of truth table.</li>
+				<li>At specific positions, small switches<img src="images/switch_saf.png" alt="switch sa0 image" /> make the lines stuck-at-0. Clicking them simulates SA0 faults at the said locations.</li>
+				<li>Repeat above steps for all possible inputs and verify the truth table</li>
+			</ul></div>
+		</div>
+		<div class="simulation">
+			<div class="input">
+				<label class="switch x" style="top: 45px;"><input type="checkbox" /><span></span></label>
+				<label class="switch y" style="top: 105px;"><input type="checkbox" /><span></span></label>
+				<label class="switch z" style="top: 165px;"><input type="checkbox" /><span></span></label>
+				<label class="switch w" style="top: 245px;"><input type="checkbox" /><span></span></label>
+			</div>
+			<div class="saf">
+				<label class="switch x0" style="left: 55px; top: 45px;"><input type="checkbox" /><span></span></label>
+				<label class="switch y0" style="left: 55px; top: 105px;"><input type="checkbox" /><span></span></label>
+				<label class="switch z0" style="left: 55px; top: 165px;"><input type="checkbox" /><span></span></label>
+				<label class="switch x1" style="left: 445px;top: 45px;"><input type="checkbox" /><span></span></label>
+				<label class="switch y1" style="left: 445px;top: 105px;"><input type="checkbox" /><span></span></label>
+				<label class="switch z1" style="left: 445px;top: 165px;"><input type="checkbox" /><span></span></label>
+				<label class="switch x2" style="left: 445px;top: 330px;"><input type="checkbox" /><span></span></label>
+				<label class="switch y2" style="left: 445px;top: 390px;"><input type="checkbox" /><span></span></label>
+				<label class="switch z2" style="left: 445px;top: 445px;"><input type="checkbox" /><span></span></label>
+				<label class="switch w0" style="left: 55px; top: 250px;"><input type="checkbox" /><span></span></label>
+				<label class="switch w1" style="left: 540px;top: 250px;"><input type="checkbox" /><span></span></label>
+				<label class="switch w2" style="left: 540px;top: 530px;"><input type="checkbox" /><span></span></label>
+				<label class="switch w3" style="left: 145px;top: 250px;"><input type="checkbox" /><span></span></label>
+			</div>
+			<img src="images/decoder.svg" type="image/svg" width="630" height="540" style="position: relative; margin-left: 40px;" />
+			<div class="output" style="max-height: 560px;">
+				<div><div style="width: 30px;"><label class="switch d0"><input type="checkbox" /><span></span></label></div><div><span class="bulb glow"></span>D0</div></div>
+				<div><div style="width: 30px;"><label class="switch d1"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D1</div></div>
+				<div><div style="width: 30px;"><label class="switch d2"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D2</div></div>
+				<div><div style="width: 30px;"><label class="switch d3"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D3</div></div>
+				<div><div style="width: 30px;"><label class="switch d4"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D4</div></div>
+				<div><div style="width: 30px;"><label class="switch d5"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D5</div></div>
+				<div><div style="width: 30px;"><label class="switch d6"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D6</div></div>
+				<div><div style="width: 30px;"><label class="switch d7"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D7</div></div>
+				<div><div style="width: 30px;"><label class="switch d8"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D8</div></div>
+				<div><div style="width: 30px;"><label class="switch d9"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D9</div></div>
+				<div><div style="width: 30px;"><label class="switch d10"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D10</div></div>
+				<div><div style="width: 30px;"><label class="switch d11"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D11</div></div>
+				<div><div style="width: 30px;"><label class="switch d12"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D12</div></div>
+				<div><div style="width: 30px;"><label class="switch d13"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D13</div></div>
+				<div><div style="width: 30px;"><label class="switch d14"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D14</div></div>
+				<div><div style="width: 30px;"><label class="switch d15"><input type="checkbox" /><span></span></label></div><div><span class="bulb"></span>D15</div></div>
+			</div>
+		</div>
+		<div class="ttable">
+			<h2>Truth Table</h2>
+			<div class="btns"><button onclick="add();" class="primary">RUN</button><button onclick="resetAll();" class="outline" style="font-size: 1.2em;">reset</button><button onclick="window.print();" class="outline">Print</button></div>
+			<table>
+				<thead>
+					<tr><td>w</td><td>x</td><td>y</td><td>z</td><td>Normal output</td><td>Faulty output</td></tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</div>
+<script src="../assets/js/iframeResize.js"></script></body>
 </html>
